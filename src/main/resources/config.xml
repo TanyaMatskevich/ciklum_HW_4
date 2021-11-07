@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="productController" class="com.ciklum.ciklumwebhw4.controller.ProductController">
+        <constructor-arg>
+            <bean class="com.ciklum.ciklumwebhw4.service.ProductService"/>
+        </constructor-arg>
+    </bean>
+</beans>
